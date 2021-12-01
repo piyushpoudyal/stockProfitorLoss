@@ -1,0 +1,37 @@
+:root{
+    --primary-color:#D3D3D3;
+    --secondary-color:#FFFF33
+}
+body{
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+#inputA,#inputB,#inputC{
+    height: 40px;
+    width: 300px;
+border-radius: 20px;
+text-align: center;
+font-size: 30px;
+}
+#cal-btn{
+    height: 40px;
+    width: 200px;
+border-radius: 20px;
+text-align: center;
+font-size: 30px;
+background-color: var(--secondary-color);
+display: block;
+margin:auto;
+margin-top: 2rem;
+}
+#outputB{
+    margin-top: 2rem;
+    font-size: 30px;
+    text-align: center;
+}
+label{
+    font-size: 40px;
+    display: block;
+    margin-top: 3rem;
+}
