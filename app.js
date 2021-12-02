@@ -27,10 +27,8 @@ function submitHandler(){
     var qty= Number(stockBought.value);
     var curr=Number(currentPrice.value);
     // calculateProfitAndLoss(ip,qty,curr);
-    if(initialPrice.value == "" || stockBought.value == "" || currentPrice.value ==""){
-        showOutput("Input fields cannot",white)
-    }else if(initialPrice<1 || stockBought<1 || currentPrice<0){
-        showOutput("Value should be greater than zero",white)
+    if(ip == "" || qty == "" || curr==""){
+        showOutput("Input fields cannot be empty")
     } else{
         calculateProfitAndLoss(ip,qty,curr);
     }
