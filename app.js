@@ -10,12 +10,12 @@ if(initial>current){
 var loss=(initial-current)*quantity;
 const lossPercentage = loss/(initial*quantity) * 100;
 output.style.color="red";
-showOutput(`Hey, the loss is ${loss} and the loss percentage is ${lossPercentage}% `);
+showOutput(`Hey, the loss is  ${loss.toFixed(2)} and the loss percentage is  ${lossPercentage.toFixed(2)}% `);
 
     }else if(current>initial){
         var profit=(current - initial)*quantity;
         const profitPercentage = profit/(initial*quantity) * 100;
-        showOutput(`Hey, the profit is ${profit} and the profit percentage is ${profitPercentage}% `);
+        showOutput(`Hey, the profit is ${profit.toFixed(2)} and the profit percentage is  ${profitPercentage.toFixed(2)}% `);
         output.style.color="green";
     }else{
 showOutput("No pain no gain,no gain no pain");
