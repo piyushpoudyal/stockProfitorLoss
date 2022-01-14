@@ -1,11 +1,11 @@
-var initialPrice=document.querySelector("#inputA");
-var stockBought=document.querySelector("#inputB");
-var currentPrice=document.querySelector("#inputC");
-var calculateButton=document.querySelector("#cal-btn");
-var output=document.querySelector("#outputB");
+const initialPrice=document.querySelector("#inputA");
+const stockBought=document.querySelector("#inputB");
+const currentPrice=document.querySelector("#inputC");
+const calculateButton=document.querySelector("#cal-btn");
+const output=document.querySelector("#outputB");
 
 
-function calculateProfitAndLoss(initial,quantity,current){
+let calculateProfitAndLoss=(initial,quantity,current)=>{
 if(initial>current){
 var loss=(initial-current)*quantity;
 const lossPercentage = loss/(initial*quantity) * 100;
@@ -22,7 +22,7 @@ showOutput("No pain no gain,no gain no pain");
     }
 
 }
-function submitHandler(){
+let submitHandler=()=>{
     var ip=  Number(initialPrice.value);
     var qty= Number(stockBought.value);
     var curr=Number(currentPrice.value);
@@ -34,7 +34,7 @@ function submitHandler(){
     }
 
 }
-function showOutput(message,status){
+let showOutput=(message,status)=>{
 
 output.innerText=message;
 }
